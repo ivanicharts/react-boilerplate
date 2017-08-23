@@ -23,7 +23,7 @@ const H2 = styled('h2')`
 
 const links = [
   { href: '/app', label: 'main' },
-  { href: '/home', label: 'home' },
+  // { href: '/home', label: 'home' },
   { href: '/app/dashboard', label: 'dashboard' }
 ]
 
@@ -33,7 +33,7 @@ export default () => (
     <nav>
       {
         links.map(({ href, label }) => (
-          <NavItem to={href}>{label}</NavItem>
+          <NavItem key={href} to={href}>{label}</NavItem>
         ))
       }
     </nav>
