@@ -1,5 +1,5 @@
-import { delay } from 'redux-saga'
-import { put, takeEvery, all } from 'redux-saga/effects'
+// import { delay } from 'redux-saga'
+import { all } from 'redux-saga/effects'
 
 import { getMyIpWatcher } from './saga'
 

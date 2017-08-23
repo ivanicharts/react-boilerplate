@@ -9,13 +9,13 @@ const getIp = () => axios.get('http://ip.jsontest.com/').then(({ data }) => data
 
 export function* getMyIp () {
   try {
-    const data = yield call(getIp)
-    yield put({type: 'IP_SUCCESS', data})
+    const { ip } = yield call(getIp)
+    yield put({type: 'IP_SUCCESS', ip})
   } catch (e) {
     yield put({type: 'IP_FAIL', e})
   }
 }
 
 export function* getMyIpWatcher () {
-  yield takeEvery('IP_REQUESTED', getMyIp)
+  yield takeEvery('IP_REQUEST', getMyIp)
 }

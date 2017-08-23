@@ -7,7 +7,7 @@ const initialState = {
 export default (state=initialState, action) => {
   switch (action.type) {
   
-  case 'GET_IP':
+  case 'IP_SUCCESS':
     return {...state, ip: action.ip}
   default:
     return initialState
