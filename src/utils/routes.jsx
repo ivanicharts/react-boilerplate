@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
-import * as c from 'shared/constants/routes'
+// import * as c from 'shared/constants/routes'
 import * as m from 'modules'
 
 export default ({ location }) => (
