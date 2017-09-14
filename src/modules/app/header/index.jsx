@@ -2,6 +2,8 @@ import React from 'react'
 import styled from 'emotion/react'
 import { Link } from 'react-router-dom'
 
+import * as r from '../constants/routes'
+
 const Header = styled('header')`
   display: flex;
   align-items: center;
@@ -23,7 +25,7 @@ const H2 = styled('h2')`
 
 const links = [
   { href: '/app', label: 'main' },
-  // { href: '/home', label: 'home' },
+  { href: r.todoList, label: 'todos' },
   { href: '/app/dashboard', label: 'dashboard' }
 ]
 

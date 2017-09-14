@@ -5,6 +5,7 @@ import * as r from './constants/routes'
 
 import Dashboard from './dashboard'
 import Header from './header'
+import TodoList from './todo-list'
 
 import './style.scss'
 
@@ -13,10 +14,11 @@ export default ({ match }) => (
     <Header />
    
     <div>
-      <Route exact path={`${match.url}${r.dashboard}`} component={Dashboard}/>
-       <Route exact path={match.url} render={() => (
+      <Route path={`${match.url}${r.dashboard}`} component={Dashboard}/>
+      <Route exact path={match.url} render={() => (
         <h3>Main App page.</h3>
       )}/>
+      <Route path={`${r.todoList}`} component={TodoList} />
     </div>
   </div>
 )

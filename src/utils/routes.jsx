@@ -10,6 +10,8 @@ export default ({ location }) => (
         <Route path='/home' component={m.home} />
         <Route path='/admin' component={m.admin} />
         <Route path='/app' component={m.app} />
+        {/*<Route path='/todos' component={m.todoLst} />*/}
+        
         <Route component={m.app} />
     </Switch>
   </Router>
