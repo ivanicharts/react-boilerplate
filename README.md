@@ -7,12 +7,10 @@ This is simple React Boilerplate based on React-Create-App.
 - Redux Saga
 - Emotion (CSS in JS)
 - SCSS loader
+- Recompose
+- Reselect
 
 ## To add:
 
-- Redux action
 - Jest examples
-- Recompose
-- Reselect
-- CSS Modules
 - Extend AirBnB linter
